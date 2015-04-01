@@ -4,7 +4,7 @@
   User.create(name: user, password: "123", created_at: "#{rand(2010..2014)}-#{rand(1..12)}-#{rand(1..28)} 03:14:15")
 end
 
-users=User.all
+users = User.all
 
 users.each do |user|
   5.times do
