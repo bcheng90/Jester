@@ -2,10 +2,12 @@
   <% @user.comments.order(:created_at).reverse.each do |comment|%>
   <li>
     <span class="small">
-      <a href="/user/<%=comment.user.id%>"><%=comment.user.name%></a> said "<%= comment.message %>" for <a href="/joke/<%= comment.joke.id %>"> this joke | <%=time(comment)%> moons ago</a>
+      <a href="/user/<%=comment.user.id%>"><%=comment.user.name%></a> said "<%= comment.message %>" for <a href="/joke/<%= comment.joke_id %>"> this joke | <%=time(comment)%> moons ago</a><br>
+      <% if current_user.id == comment.user_id %>
+        <span class="small"><a href='/joke/<%=comment.joke_id%>/comments/<%=comment.id%>/edit'>Edit</a>
+        <a href='/joke/<%=comment.joke_id%>/comments/<%=comment.id%>/delete'>Delete</a><br>
+      <% end %>
     </span>
   </li>
   <% end %>
 </ul>
-
-<!-- TODO: Edit and delete buttons for comments must be made -->

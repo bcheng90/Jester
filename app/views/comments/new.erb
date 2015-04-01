@@ -1,6 +1,6 @@
 <form id="add_comment" action="/comment" method="post">
   <input type='hidden' name='user_id' value='<%= current_user.id %>'>
-  <input type="hidden" name="joke_id" value="<%= @joke.id %>">
+  <input type="hidden" name="joke_id" value="<%= joke_id %>">
   <textarea name="message" placeholder="Enter your message" rows='6' cols='50' ></textarea><br>
   <input type="submit">
 </form>

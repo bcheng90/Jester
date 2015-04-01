@@ -7,13 +7,26 @@ $(document).ready(function() {
 
   $('form#add_comment').on('submit', function(event){
     event.preventDefault();
+    var $target = $(event.target);
     $.ajax({url: '/comment',
            method: 'post',
-           data: $(event.target).serialize(),
+           data: $target.serialize(),
            dataType: 'html'
     }).done(function(data){
-      $('#add_comment').reset();
+      $('#add_comment').trigger('reset');
     });
   });
 
+  $('#del-comment').on('click', function(event){
+    event.preventDefault();
+    var $target = $(event.target);
+    $.ajax({
+      url: $target.attr('action'),
+      type: 'delete'
+    }).done(function(data){
+
+    });
+  });
+
+// TODO: AJAX get
 });

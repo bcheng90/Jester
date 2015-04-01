@@ -55,7 +55,23 @@ body{
   margin-left: 500px;
 }
 
+#profile {
+  height: 100px;
+  width: 100px;
+  margin-top: -80px;
+  margin-left: 85%;
+  border: 2px solid black;
+  border-radius: 100%;
+  background: url(/imgs/lego.jpg);
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  position: relative;
+}
+
 #jokelist {
+  margin-top: 50px;
+  position: relative;
   width: 60%;
   overflow: scroll;
   height: 600px;
@@ -63,10 +79,11 @@ body{
   float: left;
   border: 4px inset #8e44ad;
   border-radius: 5%;
-  z-index: 9;
 }
 
 #comments {
+  margin-top: 50px;
+  position: relative;
   width: 35%;
   overflow: scroll;
   height: 600px;
@@ -74,7 +91,6 @@ body{
   float: right;
   border: 4px outset #8e44ad;
   border-radius: 5%;
-  z-index: 9;
 }
 
 #user-info {
