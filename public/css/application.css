@@ -63,6 +63,12 @@ body{
   border: 2px outset #8e44ad;
 }
 
+#user-info {
+  height: 100px;
+  padding-top: 15px;
+  width: 100%;
+}
+
 a {
   color: #8E0009;
 }
