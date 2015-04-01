@@ -10,11 +10,12 @@
     <a href="/joke/<%= @joke.id %>"><%=@joke.comments.count%> comments</a> and <%= rand(1..10)%> laughes for <a href="/user/<%=@joke.user.id%>"><%=@joke.user.name%></a> | <a href="/joke/<%= @joke.id %>"><%=time(@joke)%> moons ago</a>
   </span>
   <p><%=@joke.line2%></p>
-   <!-- TODO: Comment area -->
+
   <div class="comments">
     <div class="comment_box">
       <%= erb :'comments/new', locals: {joke_id: @joke.id} %>
     </div>
+
     <div class="comment_list">
       <ul>
         <% @joke.comments.each do |comment| %>

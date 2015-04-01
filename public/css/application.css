@@ -87,6 +87,10 @@ body{
   margin-left: 50px;
 }
 
+input#text {
+  width: 800px;
+}
+
 .edit{
   border: 2px inset #8e44ad;
   width: 115px;
