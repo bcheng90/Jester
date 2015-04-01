@@ -1,1 +1,10 @@
-edit.erb
+<div class="container">
+  <h4 class="center underline">Why so sneaky?</h4>
+
+  <form action="/joke/<%=@comment.joke_id%>/comments/<%=@comment.id%>/edit" method='post'>
+    <input type='hidden' name='_method' value='put'/>
+    <input id="text" type='text' placeholder='Edit Comment' name='message' value="<%=@comment.message%>" /><br>
+  <br>
+    <input type='submit' value='Apply Changes'/>
+  </form>
+</div>

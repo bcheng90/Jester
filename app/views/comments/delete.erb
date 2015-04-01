@@ -1,1 +1,7 @@
-delete.erb
+<div class="container">
+  <h4 class="center underline">Why so byebye?</h4>
+  <form action='/joke/<%=@comment.joke_id%>/comments/<%=@comment.id%>/delete' method ='post'>
+    <input type='hidden' name='_method' value='delete'>
+    <input type='submit' value='Delete Post'>
+  </form>
+</div>
