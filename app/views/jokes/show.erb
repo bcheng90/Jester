@@ -1,6 +1,10 @@
 <div class="container">
-  <div class="edit">
-  </div>
+  <% if current_user.id == @joke.user.id %>
+    <div class="edit">
+      <a href='/joke/<%=@joke.id%>/edit'>Edit</a> |
+      <a href='/joke/<%=@joke.id%>/delete'>Delete</a>
+    </div>
+  <% end %>
   <h1><%=@joke.line1%></h1>
   <span class="small">
     <a href="/joke/<%= @joke.id %>"><%=@joke.comments.count%> comments</a> and <%= rand(1..10)%> laughes for <a href="/user/<%=@joke.user.id%>"><%=@joke.user.name%></a> | <a href="/joke/<%= @joke.id %>"><%=time(@joke)%> moons ago</a>

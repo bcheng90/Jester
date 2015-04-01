@@ -40,6 +40,7 @@ header ul li {
 body{
   background-color: #bdc3c7;
   font-family: 'Share Tech Mono';
+  position: relative;
 }
 .container {
  width: 80%;
@@ -47,10 +48,11 @@ body{
 }
 
 #haha {
-  height: 100%;
-  opacity: 0.2;
-  position: fixed;
+  height: 750px;
+  opacity: 0.1;
+  position: absolute;
   z-index: -1;
+  margin-left: 500px;
 }
 
 #jokelist {
