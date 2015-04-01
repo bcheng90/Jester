@@ -1,5 +1,3 @@
-
-
 ["bcheng90", "danasselin", "ebutler90", "gellieb", "hoathenguyen85", "kevalwell", "laurennicoleroth", "maxrater", "mbouzi", "notika314", "notryanb", "phanendar", "rimmesbe", "sabron13", "samguergen", "steppinlo", "suprfrye", "tracyteague"].each do |user|
   User.create(name: user, password: "123", created_at: "#{rand(2010..2014)}-#{rand(1..12)}-#{rand(1..28)} 03:14:15")
 end
