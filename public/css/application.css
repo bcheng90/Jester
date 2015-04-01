@@ -1,0 +1,27 @@
+.center {
+  text-align: center;
+}
+
+header{
+  height: 35px;
+}
+
+.left {
+  margin-top: 1;
+  float: left;
+  list-style-type: none;
+}
+
+.right {
+  margin-top: 1;
+  float: right;
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline;
+}
+
+.container {
+ margin-top: 50px;
+}
