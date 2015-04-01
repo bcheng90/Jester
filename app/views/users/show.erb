@@ -1,0 +1,16 @@
+<div class="container">
+  <div id="user-info">
+    <h4 class="center underline"><%= @user.name %></h4><br>
+    Jester born: <%= time(@user) %> days ago<br>
+  </div>
+  <!-- TODO: Create div for user jokes -->
+  <div id="jokelist">
+    <h4 class="center underline">HAHAHA HA HA Ha ha</h4>
+    <%=erb :'partials/_user_jokes' %>
+  </div>
+  <!-- TODO: Create div for user comments -->
+  <div id="comments">
+    <h4 class="center underline">What you say?</h4>
+    <%=erb :'partials/_user_comments' %>
+  </div>
+</div>
