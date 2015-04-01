@@ -6,5 +6,6 @@ class CreateComments < ActiveRecord::Migration
       t.references :joke
 
       t.timestamps null: false
+    end
   end
 end
