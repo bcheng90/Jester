@@ -15,4 +15,5 @@ $(document).ready(function() {
       $('#add_comment').reset();
     });
   });
+
 });
