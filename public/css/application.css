@@ -47,31 +47,31 @@ body{
 }
 
 #haha {
-  height: 21%;
-  opacity: 0.6;
-  position: absolute;
-  margin-top: 375px;
-  margin-left: 89.5%;
-  z-index: 1;
+  height: 100%;
+  opacity: 0.1;
+  position: fixed;
+  z-index: -1;
 }
 
 #jokelist {
   width: 60%;
   overflow: scroll;
-  height: 700px;
+  height: 600px;
   display: inline-block;
   float: left;
-  border: 2px inset #8e44ad;
+  border: 4px inset #8e44ad;
+  border-radius: 5%;
   z-index: 9;
 }
 
 #comments {
   width: 35%;
   overflow: scroll;
-  height: 700px;
+  height: 600px;
   display: inline-block;
   float: right;
-  border: 2px outset #8e44ad;
+  border: 4px outset #8e44ad;
+  border-radius: 5%;
   z-index: 9;
 }
 
@@ -79,6 +79,15 @@ body{
   height: 100px;
   padding-top: 15px;
   width: 100%;
+}
+
+#new-joke {
+  margin-left: 50px;
+}
+
+.edit{
+  border: 2px inset #8e44ad;
+  width: 115px;
 }
 
 a {

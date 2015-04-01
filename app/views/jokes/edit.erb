@@ -1,0 +1,9 @@
+<h4 class="center underline">Edit your joke!</h4>
+
+<form action="/joke/<%=@joke.id%>" method='post'>
+  <input type='hidden' name='_method' value='put'/>
+  <input type='text' placeholder='Line 1' name='line1' value="<%=@joke.line1%>" /><br>
+  <input id="contentBox" type='text' placeholder="What's the punch line?" name='line2' value="<%=@joke.line2%>" /><br>
+  <br>
+  <input type='submit' value='Fix your unfunny'/>
+</form>
