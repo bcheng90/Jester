@@ -1,3 +1,7 @@
 def current_user
-  session[:user_id] ? return User.find(session[:user_id]) : return nil
+  if session[:user_id]
+    return User.find(session[:user_id])
+  else
+    return nil
+  end
 end
