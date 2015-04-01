@@ -11,11 +11,12 @@ end
 
 # Update Routes
 post '/comment' do
-  comment = Comment.new(message: params[:message], user_id: current_user.id, joke_id: params[:joke_id])
-  if comment.save
-    redirect "/joke/#{params[:joke_id]}"
+  comment = Comment.create(message: params[:message], user_id: current_user.id, joke_id: params[:joke_id])
+  p comment
+ if request.xhr?
+    erb :'comments/new', layout: false, locals: {joke_id: comment.joke_id}
   else
-    [404, "Where you tryna go?"]
+    redirect "/joke/#{params[:joke_id]}"
   end
 end
 

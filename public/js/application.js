@@ -4,4 +4,29 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+  $('form#add_comment').on('submit', function(event){
+    event.preventDefault();
+    var $target = $(event.target);
+    $.ajax({url: '/comment',
+           method: 'post',
+           data: $target.serialize(),
+           dataType: 'html'
+    }).done(function(data){
+      $('#add_comment').trigger('reset');
+    });
+  });
+
+  $('#del-comment').on('click', function(event){
+    event.preventDefault();
+    var $target = $(event.target);
+    $.ajax({
+      url: $target.attr('action'),
+      type: 'delete'
+    }).done(function(data){
+
+    });
+  });
+
+// TODO: AJAX get
 });
