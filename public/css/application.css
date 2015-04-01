@@ -10,6 +10,10 @@
   font-size: 9px;
 }
 
+.hr{
+  border-bottom: 2px solid #8e44ad;
+}
+
 header{
   height: 55px;
   background: url(/imgs/joker.jpg);
@@ -29,12 +33,18 @@ header{
 
 .right {
   margin-top: 1;
+  margin-right: 30px;
   float: right;
   list-style-type: none;
 }
 
 header ul li {
   display: inline;
+}
+
+#list-header {
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 body{
@@ -60,7 +70,7 @@ body{
   width: 100px;
   margin-top: -80px;
   margin-left: 85%;
-  border: 2px solid black;
+  border: 2px solid #8e44ad;
   border-radius: 100%;
   background: url(/imgs/lego.jpg);
   background-position: -5px -5px;
