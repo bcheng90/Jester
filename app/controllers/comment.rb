@@ -6,3 +6,5 @@ post '/comment' do
     [404, "Where you tryna go?"]
   end
 end
+
+gi
