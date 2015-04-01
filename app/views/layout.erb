@@ -28,7 +28,7 @@
     </ul>
     <ul class="right">
       <% if current_user %>
-        <li><%=current_user.name%></li> |
+        <li><a href="/user/<%=current_user.id%>"><%=current_user.name%></a></li> |
         <li><a href="/logout">Logout</a></li>
       <% else %>
         <li><a href="/login">Login</a></li> |
