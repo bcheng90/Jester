@@ -7,6 +7,7 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-contrib'
 
+gem 'rack', '< 1.6'
 gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
