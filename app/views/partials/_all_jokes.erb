@@ -1,5 +1,6 @@
 <!-- TODO: Take our the br later in styling -->
 <ol>
+<!-- Move ALL AR methods into your controllers, or even better, a method on your model -->
   <% @jokes.order(:created_at).reverse.each do |joke| %>
   <li>
     <a href="/joke/<%= joke.id %>"><%= joke.line1 %></a>

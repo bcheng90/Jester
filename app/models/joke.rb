@@ -5,4 +5,7 @@ class Joke < ActiveRecord::Base
 
   validates :line1, presence: true
 
+  def self.by_newest
+    order(:created_at).reverse
+  end
 end
