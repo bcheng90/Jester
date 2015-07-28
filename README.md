@@ -1,3 +1,3 @@
 # Jester
 
-Built with Sinatra
+Built with Sinatra and JS
